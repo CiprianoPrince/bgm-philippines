@@ -1,0 +1,8 @@
+root {
+--bg-primary-800: hsl(106, 65%, 90%)
+
+}
+
+body {
+	min-height: 100vh;
+}

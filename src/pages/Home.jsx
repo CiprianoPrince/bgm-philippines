@@ -1,16 +1,10 @@
-import PageContainer from "../layouts/PageContainer"
+import BGMContainerFluid from "../components/ui/BGMContainerFluid"
 
 function Home() {
-  return (
-    <PageContainer>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
-        ipsa fugiat nam quo in quam eveniet. Nam omnis, magnam, laudantium
-        molestias iusto maxime asperiores, ducimus dolore voluptatem ad mollitia
-        nesciunt!
-      </p>
-    </PageContainer>
-  )
+  // TODO create hero page and add necessary content
+  return <BGMContainerFluid tag='main'>
+    
+  </BGMContainerFluid>
 }
 
 export default Home

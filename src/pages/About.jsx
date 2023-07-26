@@ -20,14 +20,14 @@ function About() {
             width="100%"
             />
             <CardImgOverlay>
-                <CardTitle tag="h1" className="p-5 ">
+                <CardTitle tag="h1" className="p-5 my-5 ">
                     About Us
                 </CardTitle>
             </CardImgOverlay>
         </Card>
-        <div className='container p-4'>
+        <div className='container p-4 my-3 bg-body-tertiary'>
 
-            <h1  className='p-4'>COMPANY OVERVIEW</h1>
+            <h1  className='my-3'>COMPANY OVERVIEW</h1>
             <p>
             PGM Philipines Inc. is a leading global outsourcing company that specializes in providing a wide range of high-quality 
             and cost-effective outsourcing services to businesses across various industries. Established in May 27, 2023. </p>
@@ -47,23 +47,23 @@ function About() {
         <div className="row p-4">
             <div className="col-6">
             <h1 className='p-4'>MISSION</h1>
-            <p>
+            <p className='p-4'>
             To provide cost-effective and high-quality IT solutions that best define the requirements of our clients while ensuring 
             that we continue to provide career and skill advancement opportunities to our employees.
             </p>
             <h1 className='p-4'>VISION</h1>
-            <p>
+            <p className='p-4'>
             To be the most trusted outsourcing IT company that markets one-stop software development services globally
             and provides more job opportunities to Filipino people.
             </p>
             </div>
             <div className="col-6"> <img src={visionImg} alt="visionImg" width={700}/>
            
-            </div>
         </div>
-        <div className="row">
+        </div>
+        <div className="row p-4" >
             <h1 className='p-4'>OUR CORE VALUES</h1>
-            <div className="col-6">
+            <div className="col-6 p-4">
                 <p><b>We strive for excellence.</b></p>
                 <p>We give the best quality and efficiency in all aspects of the business to reach or exceed the targets and expectations.</p>
                 <p><b>We are committed</b></p>
@@ -72,24 +72,24 @@ function About() {
                 <p>We always do what is right, even if, and especially if no one is looking.</p>
             
             </div>
-            <div className="col-6">
+            <div className="col-6 p-4">
                 <p><b>We are flexible.</b></p>
                 <p>We view a situation, problem or opportunity from multiple perspectives and develop alternative solutions to project issues.</p>
                 <p><b>We are innovative.</b></p>
                 <p>We will continue to find ways to always adapt to the never-ending changes in the technology, hence, bringing fresh concepts and new solutions that will add tremendous value to the business.</p>
             </div>
         </div>
-        <div className="row">
-            <h1>MEET THE TEAM</h1>
-            <div className="col-6 col-md-4"> <b>Sir Prince Portfolio</b>
-            <img src={pImg} alt="pImg" width={100} />
-            <br /><br /><br /><br />
+        <div className="row p-4">
+            <h1 className='p-4'>MEET THE TEAM</h1>
+            <div className="col-6 col-md-4 my-5"> <b>Sir Prince Portfolio</b>
+            
+          
             </div>
-            <div className="col-6 col-md-4"><b>Sir Melvin Portfolio</b>
-            <img src={mImg} alt="mImg" width={100} />
+            <div className="col-6 col-md-4 my-5"><b>Sir Melvin Portfolio</b>
+            
             </div>
-            <div className="col-6 col-md-4"><b>Portfolio ko</b>
-            <img src={gImg} alt="gImg" width={100} />
+            <div className="col-6 col-md-4 my-5"><b>Portfolio ko</b>
+            
             </div>
             <div></div>
         </div>

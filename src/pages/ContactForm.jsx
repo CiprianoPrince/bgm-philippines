@@ -26,7 +26,7 @@ const ContactForm = () => {
             width="100%"
             />
             <CardImgOverlay>
-                <CardTitle tag="h1" className="p-5 ">
+                <CardTitle tag="h1" className="p-5 my-5">
                     Contact Us
                 </CardTitle>
             </CardImgOverlay>
@@ -34,7 +34,7 @@ const ContactForm = () => {
 
     <div className='d-flex'>
      {/* <div className="container h-100 justify-content-start align-items-start mt-5 " style={{width: "500px"}}> */}
-    <div className='col-6 h-100 justify-content-center' style={{width: '600px'}}>
+    <div className='col-6 h-100 justify-content-center p-5' style={{width: '600px'}}>
       <h2 className="mb-5 my-5 ps-5">Let us know your concerns!
       </h2>
       <form onSubmit={onSubmit}>
@@ -66,7 +66,7 @@ const ContactForm = () => {
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
           <label class="form-check-label" for="flexCheckDefault">I agree to the Privacy Policy.</label>
         </div>
-        <button type="Submit" className="btn btn-outline-danger" data-mdb-ripple-color="dark">Submit</button>
+        <button type="Submit" className="btn btn-outline-danger my-3" data-mdb-ripple-color="dark">Submit</button>
       </form>
     </div> <br />
     {/* <div className="row">

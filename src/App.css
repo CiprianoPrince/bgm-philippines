@@ -1,0 +1,48 @@
+
+.img1 {
+    height: 600px;
+    width: 600px;
+
+}
+
+.center {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align:justify;
+
+  }
+
+.join {
+    position: relative;
+    left: 20rem;
+    top: 50%;
+    width: 100%;
+    text-align:justify;
+}
+
+
+.techs {
+   
+    width: 250px;
+    align-items:center
+}
+
+.team {
+    padding-top: 8rem;
+    width: 750px;
+    margin-bottom: 60px;
+}
+
+.part {
+    font-size: 60px;
+
+    
+}
+
+.part1 {
+    font-size: 60px;
+    color: green;
+    padding-bottom: 10px;
+}
+

@@ -1,14 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Services from './pages/Services'; 
-import Exercise from './pages/Exercise';
+import Carrers from './pages/Carrers';
 
 function App() {
   return (
     <div>
-    <Services />
-    <Exercise />
-    
+    {/* <Services /> */}
+    <Carrers />
     </div>
   );
 }

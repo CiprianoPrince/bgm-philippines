@@ -31,14 +31,14 @@ import Team from '../assets/team.webp'
 
 const Services = () => {
 return (
-    <div className='container-fluid'>
-        <h1 className='text-center'>Product and Services</h1>
+    <div class='container-fluid'>
+        <h1 class='p-4 part1 m-4' >Our Services</h1>
     
         
                 <Card inverse>
-                    <CardImg
+                    <CardImg class="cover"
                     alt="Card image cap"
-                    src="https://htmlcolorcodes.com/assets/images/colors/shamrock-green-color-solid-background-1920x1080.png"
+                    src="https://highskyit.com/wp-content/uploads/2019/07/devops_banner_img.jpg"
                     style={{
                         height: 270
                     }}
@@ -46,7 +46,7 @@ return (
                     />
                     <CardImgOverlay>
                     <CardTitle tag="h1" className='p-5'> 
-                        Our Services
+                        
                     </CardTitle>
                     </CardImgOverlay>
                 </Card>
@@ -92,7 +92,7 @@ return (
                                         width: '25rem' 
                                     }}
                                     >
-                                    <img src="webdev.jpg" />
+                                    <img src="carreer.jpg" />
                                 </Card>
                             </Col>
                         <Col

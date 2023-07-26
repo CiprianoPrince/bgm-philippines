@@ -1,11 +1,12 @@
 import React from "react"
-import BGMContainer from "../components/ui/BGMContainer";
+import BGMMain from "../layouts/BGMMain"
 
 function Service() {
+  document.title = "BGM Phillipines Inc. | Services"
   return (
-    <BGMContainer>
+    <BGMMain>
       <p></p>
-    </BGMContainer>
+    </BGMMain>
   )
 }
 

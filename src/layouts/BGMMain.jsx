@@ -1,12 +1,12 @@
 import React from "react"
 import { Container } from "reactstrap"
 
-const BGMContainerFluid = ({ children, tag }) => {
+const BGMMain = ({ children }) => {
   return (
-    <Container fluid tag={tag}>
+    <Container fluid tag='main' className='p-0'>
       {children}
     </Container>
   )
 }
 
-export default BGMContainerFluid
+export default BGMMain

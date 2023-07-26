@@ -1,20 +1,34 @@
-import React, { createContext, useContext, useState } from "react"
+import React, { createContext, useContext, useReducer } from "react"
 
-const SideNav = createContext()
-const setSideNav = createContext()
+const sideNavContext = createContext()
+const sideNavDispatchContext = createContext()
 
-export const useSideNav = () => useContext(SideNav)
-export const useSetSideNav = () => useContext(setSideNav)
+export const useSideNavContext = () => useContext(sideNavContext)
+export const useSideNavDispatchContext = () =>
+  useContext(sideNavDispatchContext)
+
+const sideNavReducer = (state, action) => {
+  switch (action.type) {
+    case "toggle":
+      return !state
+    default:
+      return state
+  }
+}
+
+export const toggleSideNav = () => {
+  return { type: "toggle" }
+}
 
 const SideNavContext = ({ children }) => {
-  const [isSideNavShown, SetIsSideNavShown] = useState(false)
+  const [sideNavState, sideNavDispatch] = useReducer(sideNavReducer, false)
 
   return (
-    <SideNav.Provider value={isSideNavShown}>
-      <setSideNav.Provider value={SetIsSideNavShown}>
+    <sideNavContext.Provider value={sideNavState}>
+      <sideNavDispatchContext.Provider value={sideNavDispatch}>
         {children}
-      </setSideNav.Provider>
-    </SideNav.Provider>
+      </sideNavDispatchContext.Provider>
+    </sideNavContext.Provider>
   )
 }
 

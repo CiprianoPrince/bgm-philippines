@@ -4,17 +4,16 @@ import styled from "styled-components"
 import { useSetSideNav } from "../../context/SideNavContext"
 import { NavLink } from "react-router-dom"
 
-const BGMNavLink = memo(
-  ({
-    children,
-    to,
-    className = "nav-link text-light fw-bold",
-    callback = () => {},
-  }) => {
+const BGMSideNavLink = memo(
+  ({ children, to, className, callback = () => {} }) => {
     return (
       <>
         <NavItem>
-          <NavLinkStyled className={className} to={to} onClick={callback}>
+          <NavLinkStyled
+            className={`nav-link text-light fw-bold bgm-fs-2 ${className}`}
+            to={to}
+            onClick={callback}
+          >
             {children}
           </NavLinkStyled>
         </NavItem>
@@ -23,7 +22,7 @@ const BGMNavLink = memo(
   }
 )
 
-export default BGMNavLink
+export default BGMSideNavLink
 
 const NavLinkStyled = styled(NavLink)`
   position: relative;
@@ -45,12 +44,12 @@ const NavLinkStyled = styled(NavLink)`
   }
 
   &:hover:after {
-    width: 100%;
-    left: 0;
+    width: 39%;
+    left: 30%;
   }
 
   &.active:after {
-    width: 100%;
-    left: 0;
+    width: 39%;
+    left: 30%;
   }
 `

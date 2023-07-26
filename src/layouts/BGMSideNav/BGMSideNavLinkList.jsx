@@ -1,36 +1,50 @@
 import React, { memo } from "react"
 import { Nav } from "reactstrap"
 import BGMSideNavButton from "./BGMSideNavButton"
-import BGMNavLink from "../../components/ui/BGMNavLink"
-import { useSetSideNav } from "../../context/SideNavContext"
+import {
+  toggleSideNav,
+  useSideNavDispatchContext,
+} from "../../context/SideNavContext"
+import BGMSideNavLink from "../../components/ui/BGMSideNavLink"
 
 const BGMSideNavLinkList = memo(() => {
-  const setIsSideNavShown = useSetSideNav()
-  console.log("BGMSideNavLinkList")
+  const dispatch = useSideNavDispatchContext()
   return (
     <>
-      <Nav className='bg-success text-center vh-100 gap-2' vertical>
+      <Nav
+        className='bg-primary bg-opacity-75 text-center vh-100 gap-2'
+        vertical
+      >
         <BGMSideNavButton />
 
-        <BGMNavLink to='/' callback={() => setIsSideNavShown(false)}>
+        <BGMSideNavLink to='/' callback={() => dispatch(toggleSideNav())}>
           Home
-        </BGMNavLink>
+        </BGMSideNavLink>
 
-        <BGMNavLink to='/services' callback={() => setIsSideNavShown(false)}>
+        <BGMSideNavLink
+          to='/services'
+          callback={() => dispatch(toggleSideNav())}
+        >
           Services
-        </BGMNavLink>
+        </BGMSideNavLink>
 
-        <BGMNavLink to='/careers' callback={() => setIsSideNavShown(false)}>
+        <BGMSideNavLink
+          to='/careers'
+          callback={() => dispatch(toggleSideNav())}
+        >
           Careers
-        </BGMNavLink>
+        </BGMSideNavLink>
 
-        <BGMNavLink to='/about' callback={() => setIsSideNavShown(false)}>
+        <BGMSideNavLink to='/about' callback={() => dispatch(toggleSideNav())}>
           About us
-        </BGMNavLink>
+        </BGMSideNavLink>
 
-        <BGMNavLink to='/contact' callback={() => setIsSideNavShown(false)}>
+        <BGMSideNavLink
+          to='/contact'
+          callback={() => dispatch(toggleSideNav())}
+        >
           Contact us
-        </BGMNavLink>
+        </BGMSideNavLink>
       </Nav>
     </>
   )

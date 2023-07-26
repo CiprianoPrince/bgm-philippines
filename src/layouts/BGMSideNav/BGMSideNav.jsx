@@ -3,16 +3,14 @@ import { createPortal } from "react-dom"
 
 import styled from "styled-components"
 
-import { useSideNav } from "../../context/SideNavContext"
+import { useSideNavContext } from "../../context/SideNavContext"
 import BGMSideNavLinkList from "./BGMSideNavLinkList"
 
 const BGMSideNav = memo(() => {
-  const isSideNavShown = useSideNav()
-
-  console.log("BGMSideNav")
+  const isSideNavShown = useSideNavContext()
 
   return createPortal(
-    <SideNav className='bg-dark bg-opacity-75' $isShown={isSideNavShown}>
+    <SideNav $isShown={isSideNavShown}>
       <BGMSideNavLinkList />
     </SideNav>,
     document.getElementById("portal")

@@ -10,8 +10,7 @@ const BGMHeader = memo(() => {
       <Container
         fluid
         tag='header'
-        className='sticky-top p-0'
-        style={{ backgroundColor: "hsl(106, 65%, 90%)" }}
+        className='fixed-top p-0'
       >
         <BGMNav />
         <BGMSideNav />

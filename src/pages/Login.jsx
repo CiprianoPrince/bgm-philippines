@@ -1,13 +1,14 @@
 import React from "react"
-import BGMContainerFluid from "../components/ui/BGMContainerFluid"
+import BGMMain from "../layouts/BGMMain"
+import { useForm } from "react-hook-form"
 
 const Login = () => {
+  document.title = "BGM Phillipines Inc. | Login"
   // TODO create a form in features authentication page
+  const { register, control, handleSubmit } = useForm()
   return (
     <>
-      <BGMContainerFluid>
-
-      </BGMContainerFluid>
+      <BGMMain></BGMMain>
     </>
   )
 }

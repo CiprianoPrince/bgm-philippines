@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+$primary: hsla(172, 100%, 38%);
+// $secondary: hsl(245, 17%, 29%);
+
+$dark: hsl(245, 17%, 29%);
+
+$light: hsl(0, 0%, 95%);
+// $dark: hsl(243, 17%, 22%);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

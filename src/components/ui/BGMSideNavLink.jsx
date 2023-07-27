@@ -1,7 +1,6 @@
 import React, { memo } from "react"
 import { NavItem } from "reactstrap"
 import styled from "styled-components"
-import { useSetSideNav } from "../../context/SideNavContext"
 import { NavLink } from "react-router-dom"
 
 const BGMSideNavLink = memo(
@@ -10,7 +9,7 @@ const BGMSideNavLink = memo(
       <>
         <NavItem>
           <NavLinkStyled
-            className={`nav-link text-light fw-bold bgm-fs-2 ${className}`}
+            className={`nav-link text-light fw-medium bgm-fs-2 ${className}`}
             to={to}
             onClick={callback}
           >

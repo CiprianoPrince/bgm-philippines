@@ -1,16 +1,17 @@
 import { Route, Routes } from "react-router-dom"
 
+import GlobalStyle from "./components/style/Global.style"
+
+import BGMLayout from "./layouts/BGMLayout"
+
 import Home from "./pages/Home"
 import Service from "./pages/Service"
 import Career from "./pages/Career"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Error from "./pages/Error"
-
-import BGMLayout from "./layouts/BGMLayout"
-
-import GlobalStyle from "./components/style/Global.style"
 import Login from "./pages/Login"
+import Admin from "./pages/Admin"
+import Error from "./pages/Error"
 
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
         </Route>
-        <Route path='/*' element={<Error />} />
+        <Route path='admin' element={<Admin />} />
+        <Route path='*' element={<Error />} />
       </Routes>
     </>
   )

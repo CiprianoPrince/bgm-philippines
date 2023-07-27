@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useReducer } from "react"
 
-const authContext = createContext()
+const AuthContext = createContext()
 const authDispatchContext = createContext()
 
-export const useAuthContext = () => useContext(authContext)
+export const useAuthContext = () => useContext(AuthContext)
 export const useAuthDispatchContext = () => useContext(authDispatchContext)
 
 const authReducer = () => {}
@@ -11,16 +11,16 @@ const authReducer = () => {}
 export const handleLogin = (req, res) => {}
 export const handleLogout = (req, res) => {}
 
-const AuthContext = ({ children }) => {
+const AuthorizationContext = ({ children }) => {
   const [authState, authDispatch] = useReducer(authReducer, {})
 
   return (
-    <authContext.Provider value={authState}>
+    <AuthContext.Provider value={authState}>
       <authDispatchContext.Provider value={authDispatch}>
         {children}
       </authDispatchContext.Provider>
-    </authContext.Provider>
+    </AuthContext.Provider>
   )
 }
 
-export default AuthContext
+export default AuthorizationContext

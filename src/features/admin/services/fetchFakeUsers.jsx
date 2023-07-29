@@ -13,6 +13,6 @@
 
 // const fakeUsers = createUsers(2000)
 
-const fakeUsers = JSON.parse(localStorage.getItem("faker"))
+const fetchFakeUsers = () => JSON.parse(localStorage.getItem("faker"))
 
-export default fakeUsers
+export default fetchFakeUsers

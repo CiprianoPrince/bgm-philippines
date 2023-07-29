@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { createPortal } from "react-dom"
 import { Link, NavLink } from "react-router-dom"
 import { Nav } from "reactstrap"
@@ -11,11 +11,11 @@ import {
   useAdminSideNavDispatchContext,
 } from "../context/AdminSideNavContext"
 
-const BGMAdminSideNav = () => {
+const BGMAdminSideNav = memo(() => {
   const isAdminSideNavShown = useAdminSideNavContext()
   const dispatch = useAdminSideNavDispatchContext()
 
-  console.log(isAdminSideNavShown)
+  console.log("BGMAdminSideNav")
 
   return createPortal(
     <AdminSideNavStyled
@@ -32,15 +32,15 @@ const BGMAdminSideNav = () => {
           </Link>
 
           {isAdminSideNavShown ? (
-            <BiArrowFromLeftStyled
-              role='button'
-              className='text-light bg-dark'
-              onClick={() => dispatch(toggleadminSideNav())}
-            />
-          ) : (
             <BiXStyled
               role='button'
               className='text-light fw-bold'
+              onClick={() => dispatch(toggleadminSideNav())}
+            />
+          ) : (
+            <BiArrowFromLeftStyled
+              role='button'
+              className='text-light bg-dark'
               onClick={() => dispatch(toggleadminSideNav())}
             />
           )}
@@ -63,7 +63,7 @@ const BGMAdminSideNav = () => {
     </AdminSideNavStyled>,
     document.getElementById("admin-sidenav")
   )
-}
+})
 
 export default BGMAdminSideNav
 
@@ -77,7 +77,7 @@ const AdminSideNavStyled = styled.div`
   z-index: 3000;
   transition: all 0.5s ease-in-out;
   translate: ${({ isAdminSideNavShown }) =>
-      isAdminSideNavShown === false ? "5%" : "-100%"}
+      isAdminSideNavShown === true ? "5%" : "-100%"}
     0;
 `
 

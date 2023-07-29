@@ -3,19 +3,35 @@ import BGMStack from "../../../components/ui/BGMStack"
 import { Button } from "reactstrap"
 import styled from "styled-components"
 
-const ActionsButton = ({ id }) => {
+import {
+  USER_TOAST,
+  handleDeleteOneUser,
+  handleUpdateOneUser,
+  useUserDispatchContext,
+} from "../context/UserContext"
+import { useCallback } from "react"
+
+const ActionsButton = ({ user }) => {
+  const dispatch = useUserDispatchContext()
+
+  const handleUpdate = useCallback(async () => {
+    const { isConfirmed, value } = await USER_TOAST.updateOne(user)
+    if (isConfirmed) dispatch(handleUpdateOneUser(value))
+  }, [dispatch, user])
+
+  const handleDelete = useCallback(async () => {
+    const { isConfirmed } = await USER_TOAST.deleteOne(user.name)
+    if (isConfirmed) dispatch(handleDeleteOneUser(user.id))
+  }, [dispatch, user.name, user.id])
+
   return (
     <>
       <BGMStack direction='horizontal' gap={2}>
-        <EditButtonStyled
-          color='primary'
-          outline
-          onClick={() => console.log(id)}
-        >
+        <EditButtonStyled color='primary' outline onClick={handleUpdate}>
           <BiEdit className='bgm-fs-0 fw-bold' />
         </EditButtonStyled>
 
-        <DeleteButtonStyled color='dark' onClick={() => console.log(id)}>
+        <DeleteButtonStyled color='dark' onClick={handleDelete}>
           <BiTrash className='bgm-fs-0 fw-bold' />
         </DeleteButtonStyled>
       </BGMStack>

@@ -4,7 +4,7 @@ import {
   Col,
   Container,
   Form,
-  FormFeedback,
+  FormText,
   FormGroup,
   Input,
   Label,
@@ -20,9 +20,9 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import HeaderImgDivStyled from "../components/ui/BGMHeaderImgDivStyled"
 
 const schema = z.object({
-  name: z.string(),
+  name: z.string().min(3),
   email: z.string().email(),
-  phone: z.number(),
+  phone: z.string(),
   message: z.string(),
 })
 
@@ -68,9 +68,7 @@ const Contact = () => {
                 <FormGroup>
                   <Label for='name'>Your Full Name</Label>
                   <Input {...registerRs("name")} placeholder='Your name' />
-                  <Label for='exampleEmail'>Your Full Name</Label>
-                  <Input />
-                  <FormFeedback>Sweet! that name is available</FormFeedback>
+                  <FormText color="danger">{errors.name?.message}</FormText>
                 </FormGroup>
 
                 <FormGroup>
@@ -78,12 +76,9 @@ const Contact = () => {
                   <Input
                     {...registerRs("email")}
                     placeholder='Your email address'
+                    value="prince@gmail.com"
                   />
-                  <Label for='examplePassword'>Your Email</Label>
-                  <Input />
-                  <FormFeedback>
-                    Oh noes! that name is already taken
-                  </FormFeedback>
+                  <FormText color="danger">{errors.email?.message}</FormText>
                 </FormGroup>
 
                 <FormGroup>
@@ -91,15 +86,9 @@ const Contact = () => {
                   <Input
                     {...registerRs("phone")}
                     placeholder='Your phone number'
+                    value='0155419569'
                   />
-                </FormGroup>
-
-                <FormGroup className='position-relative'>
-                  <Label for='examplePassword'>Your Phone Number</Label>
-                  <Input />
-                  <FormFeedback>
-                    Oh noes! that name is already taken
-                  </FormFeedback>
+                  <FormText color="danger">{errors.phone?.message}</FormText>
                 </FormGroup>
 
                 <FormGroup>
@@ -108,9 +97,9 @@ const Contact = () => {
                     type='textarea'
                     {...registerRs("message")}
                     placeholder='Your message'
+                    value="my message"
                   />
-                  <Label for='exampleText'>Your Message</Label>
-                  <Input id='exampleText' name='text' type='textarea' />
+                  <FormText color="danger">{errors.message?.phone}</FormText>
                 </FormGroup>
 
                 <Button

@@ -18,7 +18,8 @@ const columns = [
   },
   {
     name: "Actions",
-    selector: (row) => <ActionsButton id={row.id} />,
+    selector: (row) => <ActionsButton user={row} />,
+    center: true,
   },
 ]
 

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
-import Services from './pages/Services'; 
+// import './Services.css';
+import './Carrers.css';
+// import Services from './pages/Services'; 
 import Carrers from './pages/Carrers';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
     {/* <Services /> */}
     <Carrers />
+    
     </div>
   );
 }

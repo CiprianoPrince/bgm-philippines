@@ -1,9 +1,16 @@
-
+body {
+    margin: auto;
+}
 .cover {
     max-width: 100%;
      background-size: cover;
-  background-position: center;
+    background-position:center;
   } 
+
+.webdev {
+    width: 100%;
+    height: auto;
+}
 
 .img1 {
     height: 600px;
@@ -60,9 +67,10 @@
     padding-bottom: 10px;
 }
 
-.carprog {
-    position: relative;
-    top: 200px;
-    width: 100%;
-    text-align:justify;
-}
+
+
+
+
+
+
+

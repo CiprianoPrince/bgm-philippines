@@ -27,6 +27,8 @@ import Tailwind from '../assets/tailwind.png'
 import Bitbucket from '../assets/bitbucket.png'
 import Docker from '../assets/docker.webp'
 import Team from '../assets/team.webp'
+import Webdev from '../assets/webdev.jpg'
+import Devops from '../assets/devops.jpg'
 
 
 const Services = () => {
@@ -38,7 +40,7 @@ return (
                 <Card inverse>
                     <CardImg class="cover"
                     alt="Card image cap"
-                    src="https://highskyit.com/wp-content/uploads/2019/07/devops_banner_img.jpg"
+                    src={Devops}
                     style={{
                         height: 270
                     }}
@@ -92,7 +94,7 @@ return (
                                         width: '25rem' 
                                     }}
                                     >
-                                    <img src="carreer.jpg" />
+                                    <img src={Webdev} class="webdev"/>
                                 </Card>
                             </Col>
                         <Col

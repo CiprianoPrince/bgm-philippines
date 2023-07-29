@@ -1,7 +1,7 @@
 import React from "react"
 
 import SideNavProvider from "../context/SideNavContext"
-import AuthorizationContext from "../context/AuthorizationContext"
+import AuthorizationProvider from "../context/AuthorizationContext"
 
 import BGMFooter from "./BGMFooter"
 import BGMHeader from "./BGMHeader"
@@ -12,7 +12,7 @@ import { Outlet } from "react-router-dom"
 const BGMLayout = () => {
   return (
     <>
-      <AuthorizationContext>
+      <AuthorizationProvider>
         <SideNavProvider>
           <BGMHeader />
         </SideNavProvider>
@@ -20,7 +20,7 @@ const BGMLayout = () => {
           <Outlet />
         </BGMMain>
         <BGMFooter />
-      </AuthorizationContext>
+      </AuthorizationProvider>
     </>
   )
 }

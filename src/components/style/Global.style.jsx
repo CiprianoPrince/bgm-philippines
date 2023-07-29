@@ -12,6 +12,34 @@ const GlobalStyle = createGlobalStyle`
   --bgm-fs-5: clamp(2.18rem, calc(1.61rem + 2.85vw), 3.82rem);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
 .bgm-fs--2 {
 font-size: var(--bgm-fs--2) !important;
 }
@@ -42,14 +70,6 @@ font-size: var(--bgm-fs-4) !important;
 
 .bgm-fs-5 {
 font-size: var(--bgm-fs-5) !important;
-}
-
-body {
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  /* font-family: 'Poppins', sans-serif; FIXME*/ 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 `
 

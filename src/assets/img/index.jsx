@@ -25,3 +25,5 @@ export { default as aboutUsHeaderImgJpg } from "./jpg/aboutus-header.jpg"
 
 export { default as contactUsHeaderImgJpg } from "./jpg/contactus-header.jpg"
 export { default as trainingExperienceJpg } from "./jpg/training-experience.jpg"
+
+export { default as pgmLogoPng } from "./png/PGM.png"

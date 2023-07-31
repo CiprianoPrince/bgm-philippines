@@ -1,0 +1,42 @@
+import { useCallback } from "react"
+import { Button, Input, InputGroup } from "reactstrap"
+import styled from "styled-components"
+import {
+  closeAdminSideNav,
+  useAdminSideNavContext,
+  useAdminSideNavDispatchContext,
+} from "../context/AdminSideNavContext"
+
+const FilterField = ({ filterText, onFilter, onClear }) => {
+  const isAdminSideNavShown = useAdminSideNavContext()
+  const dispatch = useAdminSideNavDispatchContext()
+
+  const closeSideNav = useCallback(() => {
+    if (!isAdminSideNavShown) return
+    dispatch(closeAdminSideNav())
+  }, [dispatch, isAdminSideNavShown])
+  return (
+    <>
+      <InputGroupStyled>
+        <Input
+          placeholder='Search...'
+          id='search'
+          type='text'
+          aria-label='Search Input'
+          value={filterText}
+          onChange={onFilter}
+          onFocus={closeSideNav}
+        />
+        <Button color='dark' className=' text-light fw-bold' onClick={onClear}>
+          Clear
+        </Button>
+      </InputGroupStyled>
+    </>
+  )
+}
+
+export default FilterField
+
+const InputGroupStyled = styled(InputGroup)`
+  width: auto;
+`

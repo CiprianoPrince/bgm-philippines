@@ -6,16 +6,19 @@ import styled from "styled-components"
 import BGMStack from "../../../components/ui/BGMStack"
 import { BiArrowFromLeft, BiSolidDashboard, BiX } from "react-icons/bi"
 import {
-  toggleadminSideNav,
+  closeAdminSideNav,
+  toggleAdminSideNav,
   useAdminSideNavContext,
   useAdminSideNavDispatchContext,
 } from "../context/AdminSideNavContext"
+
+import { useEventListener } from "../../../hooks"
 
 const BGMAdminSideNav = memo(() => {
   const isAdminSideNavShown = useAdminSideNavContext()
   const dispatch = useAdminSideNavDispatchContext()
 
-  console.log("BGMAdminSideNav")
+  useEventListener("scroll", () => dispatch(closeAdminSideNav()))
 
   return createPortal(
     <AdminSideNavStyled
@@ -35,13 +38,13 @@ const BGMAdminSideNav = memo(() => {
             <BiXStyled
               role='button'
               className='text-light fw-bold'
-              onClick={() => dispatch(toggleadminSideNav())}
+              onClick={() => dispatch(toggleAdminSideNav())}
             />
           ) : (
             <BiArrowFromLeftStyled
               role='button'
               className='text-light bg-dark'
-              onClick={() => dispatch(toggleadminSideNav())}
+              onClick={() => dispatch(toggleAdminSideNav())}
             />
           )}
         </BGMStack>

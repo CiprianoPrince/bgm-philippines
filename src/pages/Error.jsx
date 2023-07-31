@@ -1,9 +1,9 @@
 import React from "react"
 import { Button, Container } from "reactstrap"
-import { pageNotFoundSvg } from "../assets/img"
 import Stack from "../components/ui/BGMStack"
 import styled from "styled-components"
 import { useNavigate } from "react-router-dom"
+import { pageNotFoundSvg } from "../assets"
 const Error = () => {
   document.title = "Page not found"
 
@@ -16,7 +16,11 @@ const Error = () => {
           className='vh-100 justify-content-center align-content-center align-items-center'
           gap={3}
         >
-          <img className='img-fluid' src={pageNotFoundSvg} alt='' />
+          <img
+            className='img-fluid'
+            src={pageNotFoundSvg}
+            alt='pageNotFoundSvg'
+          />
           <p className='text-secondary'>
             The page you are looking for does not exist or another error
             occurred.

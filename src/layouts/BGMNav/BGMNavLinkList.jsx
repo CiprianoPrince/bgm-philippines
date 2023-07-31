@@ -13,13 +13,13 @@ const BGMNavLinkList = memo(() => {
     >
       <BGMNavLink to='/'>Home</BGMNavLink>
 
-      <BGMNavLink to='/services'>Services</BGMNavLink>
+      <BGMNavLink to='services'>Services</BGMNavLink>
 
-      <BGMNavLink to='/careers'>Careers</BGMNavLink>
+      <BGMNavLink to='careers'>Careers</BGMNavLink>
 
-      <BGMNavLink to='/about'>About us</BGMNavLink>
+      <BGMNavLink to='about'>About us</BGMNavLink>
 
-      <BGMNavLink to='admin'>Admin Panel</BGMNavLink>
+      <BGMNavLink to='admin/employees'>Admin Panel</BGMNavLink>
 
       <NavItem className='bg-light'>
         <NavLinkStyled className='fw-bold nav-link' to='/contact'>

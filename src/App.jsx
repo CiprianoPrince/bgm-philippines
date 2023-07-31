@@ -31,6 +31,7 @@ const App = () => {
 
         <Route path='admin' element={<BGMAdminLayout />}>
           <Route index element={<Admin />} />
+          <Route path=':resource' element={<Admin />} />
         </Route>
         <Route path='*' element={<Error />} />
       </Routes>

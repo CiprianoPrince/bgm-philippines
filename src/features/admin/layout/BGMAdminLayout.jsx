@@ -1,15 +1,18 @@
 import React from "react"
 import AdminSideNavContext from "../context/AdminSideNavContext"
 import { Outlet } from "react-router-dom"
-import UserProvider from "../context/UserContext"
+import EmployeesContext from "../../../context/EmployeesContext"
+import AdminProvider from "../context/AdminContext"
 
 const BGMAdminLayout = () => {
   return (
-    <UserProvider>
-      <AdminSideNavContext>
-        <Outlet />
-      </AdminSideNavContext>
-    </UserProvider>
+    <AdminProvider>
+      <EmployeesContext>
+        <AdminSideNavContext>
+          <Outlet />
+        </AdminSideNavContext>
+      </EmployeesContext>
+    </AdminProvider>
   )
 }
 

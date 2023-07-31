@@ -9,15 +9,33 @@ export const useAdminSideNavDispatchContext = () =>
 
 const adminSideNavReducer = (state, action) => {
   switch (action.type) {
-    case "toggle":
+    case ADMINSIDENAV_ACTION.open:
+      return (state = true)
+    case ADMINSIDENAV_ACTION.close:
+      return (state = false)
+    case ADMINSIDENAV_ACTION.toggle:
       return !state
     default:
       return state
   }
 }
 
-export const toggleadminSideNav = () => {
-  return { type: "toggle" }
+const ADMINSIDENAV_ACTION = {
+  open: "open",
+  close: "close",
+  toggle: "toggle",
+}
+
+export const openAdminSideNav = () => {
+  return { type: ADMINSIDENAV_ACTION.open }
+}
+
+export const closeAdminSideNav = () => {
+  return { type: ADMINSIDENAV_ACTION.close }
+}
+
+export const toggleAdminSideNav = () => {
+  return { type: ADMINSIDENAV_ACTION.toggle }
 }
 
 const AdminSideNavContext = ({ children }) => {

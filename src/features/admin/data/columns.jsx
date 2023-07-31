@@ -1,4 +1,4 @@
-import ActionsButton from "../components/ActionButtons"
+import RowActionsButton from "../components/RowActionsButton";
 
 const columns = [
   {
@@ -18,7 +18,7 @@ const columns = [
   },
   {
     name: "Actions",
-    selector: (row) => <ActionsButton user={row} />,
+    selector: (row) => <RowActionsButton user={row} />,
     center: true,
   },
 ]

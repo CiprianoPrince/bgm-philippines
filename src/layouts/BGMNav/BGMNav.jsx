@@ -16,7 +16,7 @@ const BGMNav = () => {
           <BGMLogo />
         </Col>
 
-        <ColStyled md={10} lg={8} className=''>
+        <ColStyled md={10} lg={8}>
           <BGMNavButton />
 
           <BGMNavLinkList />

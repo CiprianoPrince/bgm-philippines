@@ -1,7 +1,7 @@
 import React from "react"
 import HeaderImgDivStyled from "../components/ui/BGMHeaderImgDivStyled"
 import { Container } from "reactstrap"
-import { aboutUsHeaderImgJpg } from "../assets/img"
+import { aboutUsHeaderImgJpg } from "../assets"
 
 function About() {
   document.title = "BGM Phillipines Inc. | Admin panel"

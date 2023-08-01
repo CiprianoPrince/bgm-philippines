@@ -3,8 +3,8 @@ import React from "react"
 const MeetTheTeamTitle = () => {
   return (
     <>
-      <h1 className='bgm-fs-4 mb-5'>
-        Meet The <b className='d-block text-primary'>Team</b>
+      <h1 className='bgm-fs-4 text-uppercase mb-4'>
+        Meet The <b className='d-inline d-lg-block text-primary'>Team</b>
       </h1>
     </>
   )

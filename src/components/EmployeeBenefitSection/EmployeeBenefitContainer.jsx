@@ -14,7 +14,7 @@ const EmployeeBenefitContainer = () => {
             <EmployeeBenefitsImage />
           </Col>
 
-          <Col xs={12} lg={6} className='d-flex flex-column justify-content-center align-items-center p-3'>
+          <Col xs={12} lg={6} className='p-3'>
             <EmployeeBenefitsTitle />
             <EmployeeBenefitsText />
             <EmployeeBenefitsButton />

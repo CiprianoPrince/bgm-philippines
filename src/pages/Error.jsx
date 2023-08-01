@@ -32,6 +32,7 @@ const Error = () => {
           >
             <ErrorPageButtonStyled
               color='primary'
+              tabIndex='1'
               outline
               className='fw-medium'
               onClick={() => navigate("/", { replace: true })}
@@ -40,6 +41,7 @@ const Error = () => {
             </ErrorPageButtonStyled>
             <Button
               color='primary'
+              tabIndex='2'
               className='fw-medium text-light'
               onClick={() => navigate(-1, { replace: true })}
             >

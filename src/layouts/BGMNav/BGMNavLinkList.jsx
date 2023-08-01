@@ -19,7 +19,7 @@ const BGMNavLinkList = memo(() => {
 
       <BGMNavLink to='about'>About us</BGMNavLink>
 
-      <BGMNavLink to='admin/employees'>Admin Panel</BGMNavLink>
+      <BGMNavLink to='admin/employees'>Admin</BGMNavLink>
 
       <NavItem className='bg-light'>
         <NavLinkStyled className='fw-bold nav-link' to='/contact'>

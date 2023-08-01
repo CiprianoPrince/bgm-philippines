@@ -6,10 +6,6 @@ export { default as teamSvg } from "./img/team.svg"
 export { default as pageNotFoundSvg } from "./img/page-not-found.svg"
 export { default as loginDoorSvg } from "./img/login-door.svg"
 
-export { default as servicesHeaderImgJpg } from "./img/services-header.jpg"
-export { default as careersHeaderImgJpg } from "./img/careers-header.jpg"
-export { default as aboutUsHeaderImgJpg } from "./img/aboutus-header.jpg"
-
 export { default as pgmLogoPng } from "./img/PGM.png"
 
 export { default as annieWebp } from "./img/annie.webp"

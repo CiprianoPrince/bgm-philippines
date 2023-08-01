@@ -3,7 +3,7 @@ import React from "react"
 const EmployeeBenefitsTitle = () => {
   return (
     <>
-      <h2 className='bgm-fs-4'>
+      <h2 className='bgm-fs-4 text-uppercase mb-4'>
         EMPLOYEE <span className='text-primary'>BENEFITS</span>
       </h2>
     </>

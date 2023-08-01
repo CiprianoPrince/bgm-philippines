@@ -8,7 +8,7 @@ const ContactHeader = () => {
     <>
       <HeaderImgDivStyled headerimg={contactUsHeaderImgJpg}>
         <Container className='z-1'>
-          <h1 className='bgm-fs-5 fw-medium text-light'>Contact us</h1>
+          <h1 className='bgm-fs-5 fw-medium text-white'>Contact us</h1>
         </Container>
       </HeaderImgDivStyled>
     </>

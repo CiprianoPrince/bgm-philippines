@@ -1,11 +1,15 @@
 import RawSwal from "sweetalert2"
 import withReactContent from "sweetalert2-react-content"
 import { Form } from "../../../components/Form"
+import "../assets/css/cancelButton.css"
+import "../assets/css/deleteButton.css"
+import DeleteButton from "../components/ui/DeleteButton"
+import CancelButton from "../components/ui/CancelButton"
 
 const Swal = withReactContent(RawSwal)
 
 export const addOne = async (
-  ResourceName,
+  resource,
   fields,
   schema,
   handleValidData,
@@ -15,7 +19,7 @@ export const addOne = async (
   return await Swal.fire({
     color: "var(--bs-dark)",
     background: "var(--bs-light)",
-    title: <h1>Add {ResourceName}</h1>,
+    title: <h1>Add {resource}</h1>,
     html: (
       <Form
         fields={fields}
@@ -39,7 +43,7 @@ export const addOne = async (
 }
 
 export const updateOne = async (
-  ResourceName,
+  resource,
   fields,
   schema,
   defaultValues,
@@ -50,7 +54,7 @@ export const updateOne = async (
   return await Swal.fire({
     color: "var(--bs-dark)",
     background: "var(--bs-light)",
-    title: <h1>Update {ResourceName}</h1>,
+    title: <h1>Update {resource}</h1>,
     html: (
       <Form
         fields={fields}
@@ -67,22 +71,22 @@ export const updateOne = async (
   })
 }
 
-export const deleteOne = async (name) => {
+export const deleteOne = async (name, resource) => {
   return await Swal.fire({
     icon: "warning",
     iconColor: "var(--bs-dark)",
     color: "var(--bs-dark)",
     background: "var(--bs-light)",
-    title: <h1>Delete </h1>,
+    title: <h1>Delete {resource}</h1>,
     html: <p>{`are you sure you want to delete ${name}?`}</p>,
-    showConfirmButton: true,
-    confirmButtonText: "Delete",
-    confirmButtonColor: "var(--bs-danger)",
+    showDenyButton: false,
     showCancelButton: true,
+    confirmButtonText: "Delete",
     cancelButtonText: "Cancel",
-    cancelButtonColor: "var(--bs-secondary)",
     customClass: {
-      container: `color: black`,
+      actions: "me-4",
+      confirmButton: "btn delete-button",
+      cancelButton: "btn cancel-button",
     },
   })
 }
@@ -143,5 +147,13 @@ export const handleSave = (formValues) => {
     isDenied: false,
     isDismissed: false,
     value: formValues,
+  })
+}
+
+export const handleDelete = () => {
+  Swal.close({
+    isConfirmed: true,
+    isDenied: false,
+    isDismissed: false,
   })
 }

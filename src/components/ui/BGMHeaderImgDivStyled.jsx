@@ -21,7 +21,7 @@ const HeaderImgDivStyled = styled.div`
     height: 100%;
     background-color: ${({ afterbgcolor }) =>
       afterbgcolor === "light"
-        ? "hsl(0, 0%, 90%, 0.5)"
+        ? "hsl(0, 0%, 90%, 0.35)"
         : "hsl(0, 0%, 10%, 0.70)"};
   }
 `

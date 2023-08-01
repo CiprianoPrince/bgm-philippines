@@ -1,0 +1,76 @@
+body {
+    margin: auto;
+}
+.cover {
+    max-width: 100%;
+     background-size: cover;
+    background-position:center;
+  } 
+
+.webdev {
+    width: 100%;
+    height: auto;
+}
+
+.img1 {
+    height: 600px;
+    width: 600px;
+
+}
+
+.center {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align:justify;
+
+  }
+
+.join {
+    position: relative;
+    left: 20rem;
+    top: 50%;
+    width: 100%;
+    text-align:justify;
+}
+
+
+.techs {
+   
+    width: 250px;
+    align-items:center
+}
+
+.team {
+    padding-top: 8rem;
+    width: 750px;
+    margin-bottom: 60px;
+}
+
+.text{
+    font-size:25px;
+    padding-top: 80px;
+}
+
+.text1{
+    font-size:25px;
+    padding-top: 20px;
+}
+
+.part {
+    font-size: 60px;
+}
+
+.part1 {
+    font-size: 60px;
+    color: green;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+

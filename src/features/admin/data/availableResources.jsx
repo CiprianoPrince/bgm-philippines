@@ -1,2 +1,4 @@
-const availableResources = ["employees"]
-export default availableResources
+const RESOURCES = {
+  employees: "employees",
+}
+export default RESOURCES

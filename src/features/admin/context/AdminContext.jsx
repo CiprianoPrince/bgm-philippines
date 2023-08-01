@@ -1,8 +1,4 @@
 import React, { createContext, useContext, useReducer } from "react"
-import Swal from "sweetalert2"
-import withReactContent from "sweetalert2-react-content"
-
-const BGMSwal = withReactContent(Swal)
 
 const adminContext = createContext()
 const adminDispatchContext = createContext()
@@ -27,6 +23,7 @@ const AdminContext = ({ children }) => {
   const [adminState, adminDispatch] = useReducer(adminReducer, {
     filterText: "",
     data: [],
+    resetPagination: false,
     selectedRow: [],
   })
 

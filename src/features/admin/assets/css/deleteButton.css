@@ -1,0 +1,30 @@
+.delete-button {
+  font-weight: bold !important;
+  color: var(--bs-white) !important;
+  background-color: var(--bs-danger) !important;
+  border: 2px solid !important;
+  border-color: var(--bs-danger) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.delete-button:hover {
+  color: var(--bs-danger) !important;
+  background-color: var(--bs-white) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.delete-button:focus {
+  color: var(--bs-danger) !important;
+  background-color: var(--bs-white) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.delete-button:focus:active {
+  color: var(--bs-danger) !important;
+  background-color: var(--bs-white) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}

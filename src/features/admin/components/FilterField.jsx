@@ -1,6 +1,6 @@
 import { useCallback } from "react"
 import { Button, Input, InputGroup } from "reactstrap"
-import styled from "styled-components"
+
 import {
   closeAdminSideNav,
   useAdminSideNavContext,
@@ -15,9 +15,10 @@ const FilterField = ({ filterText, onFilter, onClear }) => {
     if (!isAdminSideNavShown) return
     dispatch(closeAdminSideNav())
   }, [dispatch, isAdminSideNavShown])
+
   return (
     <>
-      <InputGroupStyled>
+      <InputGroup className='w-auto'>
         <Input
           placeholder='Search...'
           id='search'
@@ -30,13 +31,9 @@ const FilterField = ({ filterText, onFilter, onClear }) => {
         <Button color='dark' className=' text-light fw-bold' onClick={onClear}>
           Clear
         </Button>
-      </InputGroupStyled>
+      </InputGroup>
     </>
   )
 }
 
 export default FilterField
-
-const InputGroupStyled = styled(InputGroup)`
-  width: auto;
-`

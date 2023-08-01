@@ -2,10 +2,10 @@ import React from "react"
 import ButtonStyled from "../../../../components/ui/ButtonStyled"
 import { handleCancel } from "../../helper/renderToast"
 
-const CancelButton = () => {
+const CancelButton = ({}) => {
   return (
     <>
-      <ButtonStyled color='danger' type='button' onClick={handleCancel}>
+      <ButtonStyled color='gray' type='button' onClick={handleCancel}>
         Cancel
       </ButtonStyled>
     </>

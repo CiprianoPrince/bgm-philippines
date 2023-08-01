@@ -1,0 +1,30 @@
+.cancel-button {
+  font-weight: bold !important;
+  color: var(--bs-white) !important;
+  background-color: var(--bs-gray) !important;
+  border: 2px solid !important;
+  border-color: var(--bs-gray) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.cancel-button:hover {
+  color: var(--bs-gray) !important;
+  background-color: var(--bs-white) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.cancel-button:focus {
+  color: var(--bs-gray) !important;
+  background-color: var(--bs-white) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.cancel-button:focus:active {
+  color: var(--bs-gray) !important;
+  background-color: var(--bs-white) !important;
+	  box-shadow: none !important;
+  background-image: none !important;
+}

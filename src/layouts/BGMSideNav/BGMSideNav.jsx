@@ -13,7 +13,7 @@ const BGMSideNav = memo(() => {
     <SideNav $isShown={isSideNavShown}>
       <BGMSideNavLinkList />
     </SideNav>,
-    document.getElementById("portal")
+    document.getElementById("sidenav")
   )
 })
 

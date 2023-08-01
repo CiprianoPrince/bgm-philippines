@@ -1,7 +1,6 @@
 import React, { memo } from "react"
 import { NavItem } from "reactstrap"
 import styled from "styled-components"
-import { useSetSideNav } from "../../context/SideNavContext"
 import { NavLink } from "react-router-dom"
 
 const BGMNavLink = memo(

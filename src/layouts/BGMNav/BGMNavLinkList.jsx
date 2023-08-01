@@ -5,16 +5,21 @@ import { Nav, NavItem } from "reactstrap"
 import styled from "styled-components"
 import BGMNavLink from "../../components/ui/BGMNavLink"
 
-const BGMNavLinkList = () => {
+const BGMNavLinkList = memo(() => {
   return (
-    <NavStyled className='align-items-center gap-3' horizontal='end'>
+    <NavStyled
+      className='align-items-center gap-md-1 gap-lg-3'
+      horizontal='end'
+    >
       <BGMNavLink to='/'>Home</BGMNavLink>
 
-      <BGMNavLink to='/services'>Services</BGMNavLink>
+      <BGMNavLink to='services'>Services</BGMNavLink>
 
-      <BGMNavLink to='/careers'>Careers</BGMNavLink>
+      <BGMNavLink to='careers'>Careers</BGMNavLink>
 
-      <BGMNavLink to='/about'>About us</BGMNavLink>
+      <BGMNavLink to='about'>About us</BGMNavLink>
+
+      <BGMNavLink to='admin/employees'>Admin Panel</BGMNavLink>
 
       <NavItem className='bg-light'>
         <NavLinkStyled className='fw-bold nav-link' to='/contact'>
@@ -24,7 +29,7 @@ const BGMNavLinkList = () => {
       </NavItem>
     </NavStyled>
   )
-}
+})
 
 export default BGMNavLinkList
 

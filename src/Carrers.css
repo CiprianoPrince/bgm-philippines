@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+}
+.cover {
+    max-width: 100%;
+     background-size: cover;
+    background-position:center;
+  } 
+
+.webdev {
+    width: 100%;
+    height: auto;
+}
+
+.img1 {
+    height: 600px;
+    width: 600px;
+
+}
+
+.center {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align:justify;
+
+  }
+
+.join {
+    position: relative;
+    left: 20rem;
+    top: 50%;
+    width: 100%;
+    text-align:justify;
+}
+
+
+.techs {
+   
+    width: 250px;
+    align-items:center
+}
+
+.team {
+    padding-top: 8rem;
+    width: 750px;
+    margin-bottom: 60px;
+}
+
+.text{
+    font-size:25px;
+    padding-top: 80px;
+}
+
+.text1{
+    font-size:25px;
+    padding-top: 20px;
+}
+
+.part {
+    font-size: 60px;
+}
+
+.part1 {
+    font-size: 60px;
+    color: green;
+    padding-bottom: 10px;
+}
+
+.carprog {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    text-align:justify;
+}
+
+.center {
+    width: 90rem;
+    right: 100px;
+    padding: 10px;
+
+}
+
+.table1 {
+    text-align: center;
+}
+
+.recprocess{
+    position:relative;
+    top: 100px;
+    width: 100%;
+    text-align:justify;
+}
+
+
+
+
+
+
+
+
+
+
+.employee {
+    position: relative;
+    top : 12rem;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.benefits {
+    position: relative;
+    top : 18rem;
+    left: 5rem;
+    padding: 5px;
+}
+
+
+
+.benefits1 {
+    position: relative;
+    top : 18rem;
+    left: 5rem;
+    padding: 5px;
+    color: green;
+}
+
+.rowrow {
+     padding-top: 25rem;
+     margin-bottom: 15px;
+}
+
+.workarrange {
+    position: relative;
+    top: 20rem;
+}
+
+.greeen {
+    color: green;
+}
+
+
+.work {
+    height: 40px;
+
+} 
+.cardtitle {
+    text-align: center;
+}
+
+.cardtext {
+    font-size:large;
+    justify-content:center;
+    padding: 5px;
+}
+
+.workhome {
+    height: 17.5rem;
+}
+
+.meet {
+    position: relative;
+    top : 7rem;
+}
+
+.member {
+    position: relative;
+    top : 11rem;
+    height: 24rem;
+}
+
+.prince {
+    position: relative;
+    top : 11rem;
+    left: 9rem;
+  
+}
+
+.glen {
+    position: relative;
+    top : 11rem;
+    left: 10rem;
+  
+}
+
+.melvin {
+    position: relative;
+    top : 11rem;
+    left: 9rem;
+  
+}
+
+.detailsprince {
+    position: relative;
+    top : 11rem;
+    left: 7.5rem;
+}
+
+.detailsglen {
+    position: relative;
+    top : 11rem;
+    left: 8rem;
+}
+
+.detailsmelvin {
+    position: relative;
+    top : 11rem;
+    left: 8rem;
+}
+
+.meetus {
+    position: relative;
+    top: 13rem;
+    left: 30rem;
+    
+    
+}

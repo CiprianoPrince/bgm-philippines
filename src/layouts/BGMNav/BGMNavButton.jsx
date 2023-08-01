@@ -6,7 +6,7 @@ import {
   useSideNavDispatchContext,
 } from "../../context/SideNavContext"
 
-const BGMNavButton = () => {
+const BGMNavButton = memo(() => {
   const dispatch = useSideNavDispatchContext()
   return (
     <>
@@ -16,7 +16,7 @@ const BGMNavButton = () => {
       />
     </>
   )
-}
+})
 
 export default BGMNavButton
 

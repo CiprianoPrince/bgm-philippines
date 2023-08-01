@@ -12,11 +12,11 @@ const BGMNav = () => {
   return (
     <>
       <Navbar container='fluid p-0' expand='md' className='bg-light p-0'>
-        <Col md={3} lg={4} className='bg-light'>
+        <Col md={2} lg={4} className='bg-light'>
           <BGMLogo />
         </Col>
 
-        <ColStyled md={9} lg={8} className=''>
+        <ColStyled md={10} lg={8}>
           <BGMNavButton />
 
           <BGMNavLinkList />

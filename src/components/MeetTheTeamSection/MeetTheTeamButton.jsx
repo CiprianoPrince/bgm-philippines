@@ -4,7 +4,7 @@ import LinkStyled from "../ui/LinkStyled"
 const MeetTheTeamButton = () => {
   return (
     <>
-      <LinkStyled to='about#the_team' className="btn" color='primary' outline>
+      <LinkStyled to='/about#BGMTEAM' className='btn' color='secondary' outline>
         Meet our Team
       </LinkStyled>
     </>

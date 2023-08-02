@@ -14,8 +14,6 @@ import Error from "./pages/Error"
 
 import BGMAdminLayout from "./features/admin/layout/BGMAdminLayout"
 import Admin from "./pages/Admin"
-import Careerss from "./pages/Carrers"
-import Servicess from "./pages/Servicess"
 
 const App = () => {
   return (
@@ -27,14 +25,12 @@ const App = () => {
           <Route path='/services' element={<Service />} />
           <Route path='/careers' element={<Career />} />
           <Route path='/about' element={<About />} />
-          <Route path='/servicess' element={<Servicess />} />
-          <Route path='/careerss' element={<Careerss />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
-        </Route>
-        <Route path='admin' element={<BGMAdminLayout />}>
-          <Route index element={<Admin />} />
-          <Route path=':resource' element={<Admin />} />
+          <Route path='admin' element={<BGMAdminLayout />}>
+            <Route index element={<Admin />} />
+            <Route path=':resource' element={<Admin />} />
+          </Route>
         </Route>
         <Route path='*' element={<Error />} />
       </Routes>

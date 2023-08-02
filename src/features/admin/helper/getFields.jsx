@@ -31,7 +31,76 @@ const getFields = {
       type: "text",
     },
   ],
-  benefits: [],
+  benefits: [
+    {
+      fieldName: "name",
+      label: "Name",
+      placeholder: "Enter name",
+      type: "text",
+    },
+    {
+      fieldName: "description",
+      label: "Description",
+      placeholder: "Enter description",
+      type: "text",
+    },
+  ],
+  jobs: [
+    {
+      fieldName: "name",
+      label: "Name",
+      placeholder: "Enter name",
+      type: "text",
+    },
+    {
+      fieldName: "description",
+      label: "Description",
+      placeholder: "Enter description",
+      type: "text",
+    },
+  ],
+  services: [
+    {
+      fieldName: "name",
+      label: "Services",
+      placeholder: "Enter services name",
+      type: "text",
+    },
+    {
+      fieldName: "description",
+      label: "Description",
+      placeholder: "Enter description",
+      type: "text",
+    },
+  ],
+  technologies: [
+    {
+      fieldName: "name",
+      label: "Technology",
+      placeholder: "Enter name",
+      type: "text",
+    },
+    {
+      fieldName: "description",
+      label: "Description",
+      placeholder: "Enter description",
+      type: "text",
+    },
+  ],
+  workArrangements: [
+    {
+      fieldName: "name",
+      label: "Work arrangment",
+      placeholder: "Enter work name",
+      type: "text",
+    },
+    {
+      fieldName: "description",
+      label: "Description",
+      placeholder: "Enter description",
+      type: "text",
+    },
+  ],
 }
 
 export default getFields

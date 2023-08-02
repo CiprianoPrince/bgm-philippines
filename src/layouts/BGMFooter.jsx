@@ -1,7 +1,15 @@
 import React, { memo } from "react"
 import { Col, Container, Row } from "reactstrap"
 import Stack from "../components/ui/BGMStack"
-import { BiCurrentLocation, BiLaptop } from "react-icons/bi"
+import {
+  BiCurrentLocation,
+  BiLaptop,
+  BiLogoFacebook,
+  BiLogoGithub,
+  BiLogoInstagram,
+  BiLogoLinkedin,
+  BiLogoTwitter,
+} from "react-icons/bi"
 
 const BGMFooter = memo(() => {
   return (
@@ -11,62 +19,53 @@ const BGMFooter = memo(() => {
           <Row>
             <Col xs={12} lg={4} className='p-3'>
               <p className=''>
-                <b>Philippines Office:</b>
+                <b>Main Office:</b>
               </p>
               <Stack direction='horizontal' gap={2}>
                 <BiCurrentLocation className='fs-3' />
                 <p className='m-0'>
-                  on Toyo Bldg.6F, 1-6-2, Higashi-Ueno, Taito-ku, Tokyo
-                  110-0015, Japan
+                  on Phillipines 2nd Level Market! Market! Mabini Ave. cor.
+                  Mckinley Parkway Fort Bonifacio Taguig
                 </p>
               </Stack>
               <Stack direction='horizontal' gap={2}>
                 <BiLaptop className='fs-3' />
-                <p className='m-0'>
-                  on Toyo Bldg.6F, 1-6-2, Higashi-Ueno, Taito-ku, Tokyo
-                  110-0015, Japan
-                </p>
+                <p className='m-0'></p>
               </Stack>
             </Col>
 
             <Col xs={12} lg={4} className='p-3'>
               <p className=''>
-                <b>Philippines Office:</b>
+                <b>Taguig Office:</b>
               </p>
               <Stack direction='horizontal' gap={2}>
                 <BiCurrentLocation className='fs-3' />
                 <p className='m-0'>
-                  on Toyo Bldg.6F, 1-6-2, Higashi-Ueno, Taito-ku, Tokyo
-                  110-0015, Japan
+                  on Phillipines 2nd Level Market! Market! Mabini Ave. cor.
+                  Mckinley Parkway Fort Bonifacio Taguig
                 </p>
               </Stack>
               <Stack direction='horizontal' gap={2}>
                 <BiLaptop className='fs-3' />
-                <p className='m-0'>
-                  on Toyo Bldg.6F, 1-6-2, Higashi-Ueno, Taito-ku, Tokyo
-                  110-0015, Japan
-                </p>
+                <p className='m-0'></p>
               </Stack>
             </Col>
 
             <Col xs={12} lg={4} className='p-3'>
-              {" "}
               <p className=''>
-                <b>Philippines Office:</b>{" "}
+                <b>Links: </b>
               </p>
               <Stack direction='horizontal' gap={2}>
                 <BiCurrentLocation className='fs-3' />
-                <p className='m-0'>
-                  on Toyo Bldg.6F, 1-6-2, Higashi-Ueno, Taito-ku, Tokyo
-                  110-0015, Japan{" "}
-                </p>
+                <BiLogoFacebook className='bgm-fs-1' />
+                <BiLogoTwitter className='bgm-fs-1' />
+                <BiLogoInstagram className='bgm-fs-1' />
+                <BiLogoLinkedin className='bgm-fs-1' />
+                <BiLogoGithub className='bgm-fs-1' />
               </Stack>
               <Stack direction='horizontal' gap={2}>
                 <BiLaptop className='fs-3' />
-                <p className='m-0'>
-                  on Toyo Bldg.6F, 1-6-2, Higashi-Ueno, Taito-ku, Tokyo
-                  110-0015, Japan{" "}
-                </p>
+                <p className='m-0'></p>
               </Stack>
             </Col>
           </Row>

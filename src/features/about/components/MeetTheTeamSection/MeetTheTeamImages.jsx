@@ -52,6 +52,7 @@ const MeetTheTeamImages = () => {
             cardImage={melvinWebp}
             name='Melvin Alas'
             position='Jr. Software Engineer'
+            portfolio='https://melvinxvi.github.io/Eportfolio/'
           />
         </ColStyled>
 
@@ -60,6 +61,7 @@ const MeetTheTeamImages = () => {
             cardImage={glennWebp}
             name='Glenn Evangelista'
             position='Web Developer'
+            portfolio='https://glennmarquez28.github.io/E-Portfolio/'
           />
         </ColStyled>
       </Row>

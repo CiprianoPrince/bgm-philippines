@@ -47,6 +47,13 @@ const BGMSideNavLinkList = memo(() => {
         >
           Contact us
         </BGMSideNavLink>
+
+        <BGMSideNavLink
+          to='admin/employees'
+          callback={() => dispatch(toggleSideNav())}
+        >
+          Admin
+        </BGMSideNavLink>
       </Nav>
     </>
   )

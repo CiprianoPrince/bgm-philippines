@@ -124,10 +124,21 @@ const getColumns = {
       sortable: true,
     },
     {
-      name: "description",
-      selector: (row) => row.description,
+      name: "email",
+      selector: (row) => row.email,
       sortable: true,
     },
+    {
+      name: "phone",
+      selector: (row) => row.phone,
+      sortable: true,
+    },
+    {
+      name: "message",
+      selector: (row) => row.message,
+      sortable: true,
+    },
+
     {
       name: "Actions",
       selector: (row) => <RowActionsButton resource='messages' data={row} />,

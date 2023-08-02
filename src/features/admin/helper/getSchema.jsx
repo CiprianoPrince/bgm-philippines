@@ -2,6 +2,7 @@ import { z } from "zod"
 import {
   descriptionSchema,
   emailSchema,
+  messageSchema,
   nameSchema,
   phoneSchema,
   roleSchema,
@@ -34,6 +35,12 @@ const getSchema = {
   workArrangements: z.object({
     name: nameSchema,
     description: descriptionSchema,
+  }),
+  messages: z.object({
+    name: nameSchema,
+    email: emailSchema,
+    phone: phoneSchema,
+    message: messageSchema,
   }),
 }
 

@@ -1,12 +1,17 @@
 import React from "react"
-import LinkStyled from "../ui/LinkStyled"
+import HashLinkStyled from "../ui/HashLinkStyled"
 
 const MeetTheTeamButton = () => {
   return (
     <>
-      <LinkStyled to='/about#BGMTEAM' className='btn' color='secondary' outline>
+      <HashLinkStyled
+        to='/about#BGMTEAM'
+        className='btn'
+        color='secondary'
+        outline
+      >
         Meet our Team
-      </LinkStyled>
+      </HashLinkStyled>
     </>
   )
 }

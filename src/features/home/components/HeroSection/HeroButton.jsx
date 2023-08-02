@@ -1,10 +1,17 @@
 import React from "react"
-import ButtonStyled from "../../../../components/ui/ButtonStyled"
+import HashLinkStyled from "../../../../components/ui/HashLinkStyled"
 
 const HeroButton = () => {
   return (
     <>
-      <ButtonStyled color="secondary" className='fw-bold'>Learn more</ButtonStyled>
+      <HashLinkStyled
+        to='careers#JobOpening'
+        color='secondary'
+        outline
+        className='btn fw-bold'
+      >
+        Learn more
+      </HashLinkStyled>
     </>
   )
 }

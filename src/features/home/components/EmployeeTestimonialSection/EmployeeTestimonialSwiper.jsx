@@ -11,6 +11,14 @@ import "swiper/css/scrollbar"
 
 import EmployeeTestimonialCard from "./EmployeeTestimonialCard"
 import styled from "styled-components"
+import {
+  angeloWebp,
+  annieWebp,
+  glennWebp,
+  iggyWebp,
+  melvinWebp,
+  princeWebp,
+} from "../../../../assets"
 
 const EmployeeTestimonialSwiper = () => {
   return (
@@ -37,23 +45,57 @@ const EmployeeTestimonialSwiper = () => {
         grabCursor={true}
       >
         <SwiperSlide>
-          <EmployeeTestimonialCard />
+          <EmployeeTestimonialCard
+            name='Annie'
+            image={annieWebp}
+            position='Sr. Software Engineeer'
+            testimonial='"I got to learn new stacks and technology. is trying its best to improve and listen to employees needs and suggestions The people are friendly and approachable."'
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <EmployeeTestimonialCard />
+          <EmployeeTestimonialCard
+            name='Angelo'
+            image={angeloWebp}
+            position='Mid Software Engineeer'
+            testimonial='"My favorite aspects of working here are without a doubt the potential for growth and the individuals I can grow with."'
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <EmployeeTestimonialCard />
+          <EmployeeTestimonialCard
+            name='Prince'
+            image={princeWebp}
+            position='Jr. Software Engineeer'
+            testimonial='"Very kind, supportive and friendly people. The benefits and incentives that the company offered. Work setup (currently working in the convenience of our home)"'
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <EmployeeTestimonialCard />
+          <EmployeeTestimonialCard
+            name='Iggy'
+            image={iggyWebp}
+            position='Sr. Software Engineeer'
+            testimonial='"I  like that I am learning and experiencing a wide variety of technical stacks and methodologies that are best used in Web and Mobile development and being able to work with other people."'
+          />
         </SwiperSlide>
 
-        <SwiperSlide c>
-          <EmployeeTestimonialCard />
+        <SwiperSlide>
+          <EmployeeTestimonialCard
+            name='Melvin'
+            image={melvinWebp}
+            position='Jr. Software Engineeer'
+            testimonial='"The reason why I enjoy working in BGM is we always learn how to adapt well and fast to new technology."'
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <EmployeeTestimonialCard
+            name='Glenn'
+            image={glennWebp}
+            position='Web Developer'
+            testimonial='"It’s a continuous learning experience. It’s here in BGM where I was given an opportunity to take on new tasks and ended up on loving them. Hired as software engineer, improved as infrastructure engineer."'
+          />
         </SwiperSlide>
       </SwiperStyled>
     </>

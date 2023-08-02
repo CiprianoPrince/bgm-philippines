@@ -1,17 +1,16 @@
 import { z } from "zod"
+import {
+  emailSchema,
+  messageSchema,
+  nameSchema,
+  phoneSchema,
+} from "../../../data/schema"
+
 const contactSchema = z.object({
-  name: z.string().trim().min(3, { message: "Name should have length 3" }),
-  email: z
-    .string()
-    .email({ message: "Please enter a valid email" })
-    .trim()
-    .toLowerCase(),
-  phone: z
-    .string()
-    .min(10, { message: "Phone number should be at least 10" })
-    .regex(/^\d+$/, { message: "Please enter a valid number" })
-    .transform(Number),
-  message: z.string().trim().min(1, { message: "Message cannot be empty" }),
+  name: nameSchema,
+  email: emailSchema,
+  phone: phoneSchema,
+  message: messageSchema,
 })
 
 export default contactSchema

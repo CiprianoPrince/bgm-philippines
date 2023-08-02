@@ -4,24 +4,20 @@ import { Card, CardBody, CardFooter, CardHeader, CardText } from "reactstrap"
 import { annieWebp } from "../../../../assets"
 import styled from "styled-components"
 
-const EmployeeTestimonialCard = () => {
+const EmployeeTestimonialCard = ({ name, position, image, testimonial }) => {
   return (
     <>
       <CardStyled className='shadow'>
         <CardHeader className='bg-white border-0 px-5 py-3'>
           <DivStyled className='d-inline-block'>
-            <ImgStyled className='img-fluid' src={annieWebp} alt='annieWebp' />
+            <ImgStyled className='img-fluid' src={image} alt='annieWebp' />
           </DivStyled>
         </CardHeader>
         <CardBody className='bg-white border-0 px-5 py-3'>
-          <CardText>
-            "I got to learn new stacks and technology. Management is trying its
-            best to improve and listen to employees needs and suggestions. The
-            people are friendly and approachable."
-          </CardText>
+          <CardText>{`${testimonial}`}</CardText>
         </CardBody>
         <CardFooter className=' bg-white border-0 px-5 py-3'>
-          Annie, Mid Software Engineer
+          {`${name}, ${position}`}
         </CardFooter>
       </CardStyled>
     </>
@@ -32,6 +28,7 @@ export default EmployeeTestimonialCard
 
 const CardStyled = styled(Card)`
   width: 25rem !important;
+  height: 30rem !important;
   margin-inline: auto;
 `
 

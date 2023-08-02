@@ -24,8 +24,9 @@ const DataTable = ({ resource }) => {
 
   const filteredData = data.filter(
     (data) =>
-      data.firstName &&
-      data.firstName.toLowerCase().includes(filterText.toLowerCase())
+      (data.firstName &&
+        data.firstName.toLowerCase().includes(filterText.toLowerCase())) ||
+      (data.name && data.name.toLowerCase().includes(filterText.toLowerCase()))
   )
 
   const TitleWithAddButton = (

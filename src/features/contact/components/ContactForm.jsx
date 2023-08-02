@@ -4,7 +4,7 @@ import Form from "../../../components/Form/Form"
 import contactFields from "../data/contactFields"
 import contactSchema from "../data/contactSchema"
 import addMessage from "../service/addMessage"
-import ContactButton from "./ContactButton";
+import ContactButton from "./ContactButton"
 
 const ContactForm = () => {
   return (

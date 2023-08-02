@@ -42,7 +42,7 @@ const getFields = {
       fieldName: "description",
       label: "Description",
       placeholder: "Enter description",
-      type: "text",
+      type: "textarea",
     },
   ],
   jobs: [
@@ -56,7 +56,7 @@ const getFields = {
       fieldName: "description",
       label: "Description",
       placeholder: "Enter description",
-      type: "text",
+      type: "textarea",
     },
   ],
   services: [
@@ -70,7 +70,7 @@ const getFields = {
       fieldName: "description",
       label: "Description",
       placeholder: "Enter description",
-      type: "text",
+      type: "textarea",
     },
   ],
   technologies: [
@@ -84,7 +84,7 @@ const getFields = {
       fieldName: "description",
       label: "Description",
       placeholder: "Enter description",
-      type: "text",
+      type: "textarea",
     },
   ],
   workArrangements: [
@@ -98,7 +98,33 @@ const getFields = {
       fieldName: "description",
       label: "Description",
       placeholder: "Enter description",
+      type: "textarea",
+    },
+  ],
+  messages: [
+    {
+      fieldName: "name",
+      label: "Work arrangment",
+      placeholder: "Enter work name",
       type: "text",
+    },
+    {
+      fieldName: "email",
+      label: "Email",
+      placeholder: "Enter email",
+      type: "email",
+    },
+    {
+      fieldName: "phone",
+      label: "Phone",
+      placeholder: "Enter Phone",
+      type: "number",
+    },
+    {
+      fieldName: "message",
+      label: "Message",
+      placeholder: "Enter message",
+      type: "textarea",
     },
   ],
 }

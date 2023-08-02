@@ -14,8 +14,9 @@ export const emailSchema = z
 
 export const phoneSchema = z
   .string()
-  .min(10, { message: "Phone number should be at least 10" })
   .regex(/^\d+$/, { message: "Please enter a valid number" })
+  .min(10, { message: "Phone number should be at least 10" })
+  .max(10, { message: "Phone number should be at least 10" })
   .transform(Number)
 
 export const messageSchema = z

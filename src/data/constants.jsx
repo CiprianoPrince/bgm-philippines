@@ -5,4 +5,5 @@ export const RESOURCE = {
   services: "services",
   technologies: "technologies",
   workArrangements: "workArrangements",
+  messages: "messages",
 }

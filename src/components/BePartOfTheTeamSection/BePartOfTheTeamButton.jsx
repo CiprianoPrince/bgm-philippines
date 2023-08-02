@@ -1,13 +1,16 @@
 import React from "react"
-import LinkStyled from "../ui/LinkStyled"
-import { Link } from "react-router-dom"
-
+import HashLinkStyled from "../ui/HashLinkStyled"
 const BePartOfTheTeamButton = () => {
   return (
     <>
-      <LinkStyled className="btn" color='secondary' outline>
+      <HashLinkStyled
+        to='/careers#JobOpening'
+        className='btn fw-bold'
+        color='secondary'
+        outline
+      >
         Explore Job Opportunities
-      </LinkStyled>
+      </HashLinkStyled>
     </>
   )
 }

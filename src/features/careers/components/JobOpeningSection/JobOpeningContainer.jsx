@@ -6,7 +6,7 @@ import JobOpeningCards from "./JobOpeningCards"
 const JobOpeningContainer = () => {
   return (
     <>
-      <Container tag='section' className='my-5 p-5 '>
+      <Container id="JobOpening" tag='section' className='my-5 p-5 '>
         <JobOpeningTitle />
         <JobOpeningCards />
       </Container>

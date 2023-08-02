@@ -3,8 +3,6 @@ import withReactContent from "sweetalert2-react-content"
 import { Form } from "../../../components/Form"
 import "../assets/css/cancelButton.css"
 import "../assets/css/deleteButton.css"
-import DeleteButton from "../components/ui/DeleteButton"
-import CancelButton from "../components/ui/CancelButton"
 
 const Swal = withReactContent(RawSwal)
 

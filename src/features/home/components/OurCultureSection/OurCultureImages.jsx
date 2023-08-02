@@ -15,10 +15,9 @@ const OurCultureImages = () => {
 
             <p className='bgm-fs--1 fw-semibold text-light m-0 z-1'>
               We are more than just your coworkers. Our Team from different
-              levels of the organization: Japan Management, Team Leaders and
-              Engineers are all approachable and engaging. We promote and
-              maintain our camaraderie through our fun-filled company events and
-              engagement activities.
+              levels of the organization: Team Leaders and Engineers are all
+              approachable and engaging. We promote and maintain our camaraderie
+              through our fun-filled company events and engagement activities.
             </p>
           </CultureDivStyled>
         </Col>

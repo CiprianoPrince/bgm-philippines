@@ -24,7 +24,7 @@ const WhyJoinUsContainer = () => {
               Good Compensation and Benefits
             </h3>
 
-            <p className='text-gray'>
+            <p className='bgm-fs-0 text-gray'>
               We recognize your efforts through performance-based incentives and
               salary increase. We are also committed to continuously improve the
               benefits package that you deserve.
@@ -36,7 +36,7 @@ const WhyJoinUsContainer = () => {
               Promotes Employee Growth
             </h3>
 
-            <p className='text-gray'>
+            <p className='bgm-fs-0 text-gray'>
               As the company grows, our employees grow with it as well. As part
               of company’s commitment to our employees advancement, we provide
               various opportunities for growth and development, career-wise and
@@ -47,7 +47,7 @@ const WhyJoinUsContainer = () => {
           <Col xs={12} md={6} className='p-3'>
             <h3 className='bgm-fs-1 fw-semibold text-primary'>Future Ready</h3>
 
-            <p className='text-gray'>
+            <p className='bgm-fs-0 text-gray'>
               Our organization keeps up to date with the latest technological
               trends. Sharing new ideas is actively encouraged in our
               collaborative and team-oriented environment. We shape, prepare and
@@ -60,7 +60,7 @@ const WhyJoinUsContainer = () => {
               Efficient Training Experience
             </h3>
 
-            <p className='text-gray'>
+            <p className='bgm-fs-0 text-gray'>
               We provide a holistic technical training experience for you to be
               prepared for your future projects. You will also work with and
               will be guided by our approachable and experienced trainers.

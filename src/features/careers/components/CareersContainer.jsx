@@ -7,12 +7,14 @@ import { WorkArrangementSection } from "./WorkArrangementSection"
 import { JobOpeningSection } from "./JobOpeningSection"
 import { RecruitementProcessSection } from "./RecruitementProcessSection"
 import { CareerProgressionSection } from "./CareerProgressionSection"
+import CareersText from "./CareersText"
 
 const CareersContainer = () => {
   return (
     <>
       <Container fluid tag='section' className='p-0 mt-5'>
         <CareersHeader />
+        <CareersText />
         <CareerProgressionSection />
         <JobOpeningSection />
         <RecruitementProcessSection />

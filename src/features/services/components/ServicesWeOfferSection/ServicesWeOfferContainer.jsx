@@ -6,7 +6,7 @@ import ServicesWeOfferCard from "./ServicesWeOfferCard"
 const ServicesWeOfferContainer = () => {
   return (
     <>
-      <Container tag='section' className='p-5'>
+      <Container tag='section' className='py-5'>
         <ServicesWeOfferTitle />
         <ServicesWeOfferCard />
       </Container>

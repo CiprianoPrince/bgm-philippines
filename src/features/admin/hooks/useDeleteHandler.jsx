@@ -15,6 +15,7 @@ const useDeleteHandler = (resource, data, dispatch) => {
         name = `${data.firstName} ${data.lastName}`
         break
       default:
+        name = data.name
         break
     }
     const { isConfirmed } = await deleteOne(

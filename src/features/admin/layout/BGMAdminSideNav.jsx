@@ -50,17 +50,51 @@ const BGMAdminSideNav = memo(() => {
         </BGMStack>
 
         <NavLinkStyled
+          onClick={() => dispatch(toggleAdminSideNav())}
           className='bgm-fs-0 border border-0 rounded-4'
-          to='/admin'
+          to='/admin/employees'
         >
-          <BiSolidDashboard className='d-inline-block' /> Dashboard
+          Employees
         </NavLinkStyled>
 
         <NavLinkStyled
+          onClick={() => dispatch(toggleAdminSideNav())}
           className='bgm-fs-0 border border-0 rounded-4'
-          to='/admin'
+          to='/admin/jobs'
         >
-          <BiSolidDashboard className='d-inline-block' /> Dashboard
+          Available Jobs
+        </NavLinkStyled>
+
+        <NavLinkStyled
+          onClick={() => dispatch(toggleAdminSideNav())}
+          className='bgm-fs-0 border border-0 rounded-4'
+          to='/admin/services'
+        >
+          Services
+        </NavLinkStyled>
+
+        <NavLinkStyled
+          onClick={() => dispatch(toggleAdminSideNav())}
+          className='bgm-fs-0 border border-0 rounded-4'
+          to='/admin/technologies'
+        >
+          Technology
+        </NavLinkStyled>
+
+        <NavLinkStyled
+          onClick={() => dispatch(toggleAdminSideNav())}
+          className='bgm-fs-0 border border-0 rounded-4'
+          to='/admin/workArrangements'
+        >
+          Work Arrangement
+        </NavLinkStyled>
+
+        <NavLinkStyled
+          onClick={() => dispatch(toggleAdminSideNav())}
+          className='bgm-fs-0 border border-0 rounded-4'
+          to='/admin/messages'
+        >
+          Messages
         </NavLinkStyled>
       </NavStyled>
     </AdminSideNavStyled>,
@@ -72,10 +106,10 @@ export default BGMAdminSideNav
 
 const AdminSideNavStyled = styled.div`
   position: fixed;
-  top: 0;
+  top: 4rem;
   left: 0;
   width: min(20rem, 80vw);
-  height: 97%;
+  height: 90%;
   margin-top: 1rem;
   z-index: 3000;
   transition: all 0.5s ease-in-out;

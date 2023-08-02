@@ -28,14 +28,10 @@ const Form = ({
 
   return (
     <>
-      <BsForm
-        className={className}
-        onSubmit={handleSubmit(handleValidData)}
-        onReset={reset}
-      >
+      <BsForm className={className} onSubmit={handleSubmit(handleValidData)}>
         {fields.map(({ fieldName, type, label, placeholder }) => (
           <FormGroup
-            key={fieldName}
+            key={placeholder}
             fieldName={fieldName}
             type={type}
             label={label}

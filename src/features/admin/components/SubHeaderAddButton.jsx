@@ -4,7 +4,7 @@ import { BiPlus } from "react-icons/bi"
 import BGMStack from "../../../components/ui/BGMStack"
 import styled from "styled-components"
 import ButtonStyled from "../../../components/ui/ButtonStyled"
-import formatSentenceCaseSingular from "../utils/formatSentenceCaseSingular"
+import formatSentenceCase from "../utils/formatSentenceCase"
 
 const SubHeaderAddButton = ({ resource, dispatch }) => {
   const handleAdd = useAddHandler(resource, dispatch)
@@ -15,9 +15,7 @@ const SubHeaderAddButton = ({ resource, dispatch }) => {
         <AddButtonStyled color='primary' outline onClick={handleAdd}>
           <BiPlus className='fw-bold' />
         </AddButtonStyled>
-        <h1 className='d-inline-block m-0'>
-          {formatSentenceCaseSingular(resource)}
-        </h1>
+        <h1 className='d-inline-block m-0'>{formatSentenceCase(resource)}</h1>
       </BGMStack>
     </>
   )

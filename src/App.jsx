@@ -20,7 +20,7 @@ const App = () => {
         <>
             <GlobalStyle />
             <Routes>
-                <Route path="/" element={<BGMLayout />}>
+                <Route element={<BGMLayout />}>
                     <Route index element={<Home />} />
                     <Route path="/services" element={<Service />} />
                     <Route path="/careers" element={<Career />} />
@@ -31,8 +31,8 @@ const App = () => {
                         <Route index element={<Admin />} />
                         <Route path=":resource" element={<Admin />} />
                     </Route>
+                    <Route path="*" element={<Error />} />
                 </Route>
-                <Route path="*" element={<Error />} />
             </Routes>
         </>
     );
